@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Article from "../Article copy/Article";
+import Article from "../Article/Article";
 
 export default function Articles({ articles }) {
   return (

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search component renders Search 1`] = `
+<DocumentFragment>
+  <form>
+    <input
+      name="article-search"
+      type="text"
+      value="minecraft"
+    />
+  </form>
+</DocumentFragment>
+`;
