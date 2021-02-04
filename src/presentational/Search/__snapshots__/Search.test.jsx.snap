@@ -2,12 +2,15 @@
 
 exports[`Search component renders Search 1`] = `
 <DocumentFragment>
-  <form>
-    <input
-      name="article-search"
-      type="text"
-      value="minecraft"
-    />
-  </form>
+  <label
+    for="article-search"
+  >
+    Search Articles
+  </label>
+  <input
+    id="article-search"
+    type="text"
+    value="minecraft"
+  />
 </DocumentFragment>
 `;
