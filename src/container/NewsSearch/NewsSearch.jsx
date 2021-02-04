@@ -23,7 +23,7 @@ export default class NewsSearch extends Component {
 
   render() {
 
-    const { search, articles } = this.state;
+    const { search, articles, loading } = this.state;
     const { onSearchChange } = this;
 
     return (
@@ -31,8 +31,12 @@ export default class NewsSearch extends Component {
         <Search 
           search={ search }
           onSearchChange={ onSearchChange }/>
-        <Articles 
-          articles={ articles }/>
+        {
+          loading ?
+            <> Loadering! </> :
+            <Articles 
+              articles={ articles }/>
+        }
       </>
     );
   }
