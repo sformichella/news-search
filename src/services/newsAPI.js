@@ -5,3 +5,7 @@ const getArticles = search => {
   return fetch(API_URL + "&q=" + search)
     .then(res => res.json());
 };
+
+export {
+  getArticles
+};
