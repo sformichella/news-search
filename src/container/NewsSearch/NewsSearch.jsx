@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Search from "../../presentational/Search/Search";
 import Articles from "../../presentational/Articles/Articles";
 
+import { getArticles } from "../../services/newsAPI";
+
 export default class NewsSearch extends Component {
 
   state = {
@@ -10,8 +12,13 @@ export default class NewsSearch extends Component {
     loading: false
   }
 
-  onSearchChange = () => {
+  onSearchChange = ({ target }) => {
+    const { value: search } = target;
 
+    this.setState({ loading: true });
+
+    getArticles(search)
+      .then(articles => this.setState({ articles, loading: false }));
   }
 
   render() {
