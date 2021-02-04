@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import NewsSearch from "./NewsSearch";
 
 describe("NewsSearch", () => {
@@ -7,11 +7,15 @@ describe("NewsSearch", () => {
     render(<NewsSearch />);
 
     const searchInput = screen.getByLabelText("article-search");
-    
+
     fireEvent.change(searchInput, {
       target: {
         value: "cute puppies"
       }
+    });
+
+    return waitFor(() => {
+      expect()
     });
   });
 });
