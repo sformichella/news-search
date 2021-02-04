@@ -34,7 +34,7 @@ export default class NewsSearch extends Component {
         {
           loading ?
             <> Loadering! </> :
-            <Articles 
+            <Articles
               articles={ articles }/>
         }
       </>

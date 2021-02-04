@@ -4,7 +4,7 @@ import Article from "../Article/Article";
 
 export default function Articles({ articles }) {
   return (
-    <ul>
+    <ul data-testid="articles">
       {
         articles.map((article, i) => {
           return (
