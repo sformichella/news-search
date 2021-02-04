@@ -6,7 +6,8 @@ export default class NewsSearch extends Component {
 
   state = {
     search: "",
-    articles: []
+    articles: [],
+    loading: false
   }
 
   onSearchChange = () => {

@@ -4,10 +4,11 @@ import PropTypes from "prop-types";
 export default function Search({ search, onSearchChange }) {
   return (
     <form>
+      <label htmlFor="article-search">Search Articles</label>
       <input
         type="text"
         value={ search }
-        name="article-search"
+        id="article-search"
         onChange={ onSearchChange }
       />
     </form>
