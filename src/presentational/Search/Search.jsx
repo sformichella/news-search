@@ -3,15 +3,15 @@ import PropTypes from "prop-types";
 
 export default function Search({ search, onSearchChange }) {
   return (
-    <form>
+    <>
       <label htmlFor="article-search">Search Articles</label>
       <input
+        id="article-search"
         type="text"
         value={ search }
-        id="article-search"
         onChange={ onSearchChange }
       />
-    </form>
+    </>
   );
 }
 

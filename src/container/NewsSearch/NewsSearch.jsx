@@ -15,7 +15,7 @@ export default class NewsSearch extends Component {
   onSearchChange = ({ target }) => {
     const { value: search } = target;
 
-    this.setState({ loading: true });
+    this.setState({ search, loading: true });
 
     getArticles(search)
       .then(articles => this.setState({ articles, loading: false }));
